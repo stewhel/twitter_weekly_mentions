@@ -68,7 +68,7 @@ s.set_properties(**{'width': '150px'})
 html = transform(s.hide_index().render().replace("\n", ""))
 rt = "\n" + "Scan Time: " + time.strftime("%A %b %d %H:%M:%S %p")
 
-yag = yagmail.SMTP('stewhel9', 'Spaceforce5')
-yag.send(to='stewhel9@gmail.com',
-         subject='Weekly Twitter Mentions',
-         contents= html + rt)
+yag = yagmail.SMTP('{YOUR GMAIL NAME}', '{YOUR PASSWORD}')
+yag.send(to='{EMAIL RECIEPIENT]',
+         subject='Twitter Pictures' ,
+         contents= html)
